@@ -34,6 +34,18 @@ Please refer to:
 + [Ollama](https://ollama.com/)  
 + [Ollama Github](https://github.com/ollama/ollama)
 
+### Using with llmman
+
+[llmman](https://github.com/llmmanorg/llmman) is a local model runner that serves the Ollama API on port `17434`, so it works with Ollama-GUI as well.
+
+```
+curl -fsSL https://raw.githubusercontent.com/llmmanorg/llmman/main/install.sh | sh
+llmman pull gemma4
+llmman serve
+```
+
+Then start Ollama-GUI and change the host field at the top of the window from `http://127.0.0.1:11434` to `http://127.0.0.1:17434`.
+
 ## ⚙️ Run
 
 Choose any way you like:
